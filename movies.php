@@ -13,7 +13,7 @@ function printMovies(array $movies, int $age)
 	}
 }
 
-function getMovie(array $movie, int $i)
+function stringMovie(array $movie, int $i)
 {
 	$title = $movie["title"];
 	$year = $movie["release_year"];
