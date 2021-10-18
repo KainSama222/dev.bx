@@ -13,14 +13,13 @@ function printMovies(array $movies, int $age)
 	}
 }
 
-function stringMovie(array $movie, int $i)
+function getMovie(array $movie, int $i)
 {
 	$title = $movie["title"];
 	$year = $movie["release_year"];
-	$duration = $movie["duration"];
 	$age = $movie["age_restriction"];
 	$rating = $movie["rating"];
-	return"$i) Название: $title Год выпуска: $year Длительность: $duration минут Возрастное ограничение: $age+ Рейтинг: $rating; \n";
+	return"$i. $title ($year), $age+. Rating - $rating \n";
 }
 
 $movies = [

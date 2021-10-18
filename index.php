@@ -1,6 +1,6 @@
 <?php
 
-include '..\dev.bx\movies.php';
+include 'movies.php';
 
 $age = readline("Введи свой возраст:");
 if (is_numeric($age)) {
