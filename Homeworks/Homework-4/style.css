@@ -22,34 +22,31 @@ a{
 
 .container{
 	flex: 1;
-	background: aqua;
+	background-color: #dddddd;
 }
 
 .header{
-	height: 88px;
+	height: 75px;
 	background: #FFFFFF;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 .menu{
 	display: block;
 	margin: 60px 30px;
-
-
 }
 .menu-component{
 	display: flex;
 	width: 340px;
 	height: 70px;
-	padding: 0px 15px;
+	padding: 0 15px;
 
-	font-family: Open Sans;
+	font-family: Open Sans, sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 22px;
 
-	display: flex;
 	align-items: center;
 	text-transform: uppercase;
 
@@ -66,6 +63,108 @@ a{
 }
 
 
+.movie-list--item{
+	position: relative;
+	display: inline-block;
+	width: 370px;
+	height: 700px;
+	background: white;
+	border-radius:20px;
+	margin-left: 30px;
+	margin-top: 20px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.movie-list--item-overlay{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 9;
+	opacity: 0;
+	transition: .2s;
+}
+
+.movie-list--item:hover,.movie-list--item-overlay:hover{
+	opacity: 1;
+}
+
+.movie-list--item-image{
+	display: block;
+	height: 430px;
+	background-size: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+.movie-list--item-head {
+	display: block;
+	padding: 12px 20px 15px 20px;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+.movie-list--item-title{
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 30px;
+	color: #333333;
+}
+.movie-list--item-subtitle{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	color: #999999;
+}
+.movie-list--item-description{
+	margin: 15px 20px 30px 20px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+.movie-list--item-bottom{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 20px;
+	white-space: nowrap;
+
+	color: #CCCCCC;
+}
+
+.movie-list--item-time {
+	position: relative;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	padding-left: 25px;
+	line-height: 22px;
+}
+
+.movie-list--list-time--icon{
+	position: absolute;
+	left:0;
+	width: 20px;
+	height: 20px;
+	background-image: url("images/1.svg")
+}
+.movie-list--item-info{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
 
 
 
