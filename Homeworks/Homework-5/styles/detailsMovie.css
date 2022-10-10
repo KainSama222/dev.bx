@@ -1,0 +1,173 @@
+
+/* Вся карточка*/
+.movieCard{
+	display: flex;
+	margin: 50px;
+	padding: 25px;
+	flex-direction: column;
+	background: #FFFFFF;
+	min-width:  1000px;
+}
+/* Хэдер*/
+.movieCard-header{
+	display: flex;
+	font-family: Open Sans, sans-serif;
+	font-style: normal;
+	border-bottom: 1px solid #CCCCCC;
+
+	margin: 0 0 20px 50px;
+	justify-content: space-between;
+}
+.movieCard-header-title{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 65px;
+
+	color: #333333;
+	margin-top: 35px;
+}
+
+.movieCard-header-favoritesIcon{
+	width: 43px;
+	height: 37px;
+	background: url("../data/images/icon-with-like-grey.svg") no-repeat;
+	background-size: cover;
+	margin-top: 56px;
+}
+.movieCard-header-favoritesIcon:hover{
+	background: url("../data/images/icon-with-like-red.svg") no-repeat;
+}
+/*Заголовок на англ + ограничение по возрасту*/
+.movieCard-header-subtitle{
+	display: inline-flex;
+	margin-bottom: 17px;
+
+	align-items: center
+}
+.movieCard-header-subtitle-text{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33px;
+
+	color: #999999;
+}
+.movieCard-header-subtitle-ageLimit{
+	margin-left: 10px;
+	width: 39px;
+	height: 32px;
+	background: rgba(242, 242, 242, 0.1);
+	border: 3px solid #CCCCCC;
+	box-sizing: border-box;
+	border-radius: 7px;
+	text-align: center;
+
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+
+	color: #CCCCCC;
+}
+
+/* Постер*/
+.movieCard-logo{
+	width: 469px;
+	height: 730px;
+	min-width: 469px;
+	min-height: 730px;
+	background: no-repeat;
+	background-size: cover ;
+	border: solid 11px #F2F2F2;
+
+	margin-left: 50px;
+	margin-right: 33px;
+}
+/* Рейтинг*/
+.movieCard-rating{
+	display: flex;
+	align-content: center;
+	text-align: center;
+	line-height:55px;
+	align-items: center
+}
+
+.movieCard-rating-block{
+
+	width: 27px;
+	height: 27px;
+	background: #F2F2F2;
+	border: 5px solid #FFFFFF;
+}
+.movieCard-rating-circle{
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+
+	background: #E78818;
+
+	color: #FFFFFF;
+	font-size: 22px;
+}
+
+/* Вся подробная информация*/
+.movieCard-info-Text{
+	display: flex;
+	flex-direction: column;
+
+	margin-right: 40px;
+}
+/*Блок о фильме*/
+.info{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.movieCard-info{
+	display: flex;
+	font-family: Open Sans, sans-serif;
+	font-style: normal;
+}
+
+.info-block{
+	font-family: Open Sans, sans-serif;
+	font-style: normal;
+	display: inline-flex;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+
+	margin-top: 15px;
+
+	color: #000000;
+}
+
+.info-block-name{
+	font-family: Open Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+
+	color: #666666;
+	min-width: 200px;
+	Width: 200px
+}
+
+/* Все заголовки блоков*/
+.movieCard-Caption{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 33px;
+	margin-bottom: 15px;
+
+	color: #333333;
+}
+
+.movieCard-description{
+	font-family: Open Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+
+	font-size: 18px;
+	line-height: 28px;
+
+}
